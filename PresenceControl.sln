@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresenceControl", "PresenceControl.csproj", "{794DA181-519A-44AD-AAD7-2D80061DA035}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresenceControl", "PresenceControl.csproj", "{794DA181-519A-44AD-AAD7-2D80061DA035}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{4333B4BE-9BDF-4064-97D3-622BE3D1E575}"
+	ProjectSection(SolutionItems) = preProject
+		YourDbContext.cs = YourDbContext.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

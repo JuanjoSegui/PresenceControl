@@ -1,4 +1,6 @@
-﻿namespace PresenceControl.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PresenceControl.Models
 {
     public class Presence
     {
@@ -8,8 +10,8 @@
         public DateTime DatetimeEntry { get; set; }
         public DateTime DatetimeExit { get; set; }
         public double HoursWorked { get; set; }
-
-        public List<Presence> presences = new List<Presence>();
+        public DateTime? Date { get; internal set; }
+        public static List<Presence> AllPresences { get; set; } = new List<Presence>();
         List<Presence> dailyPresences = GetPresencePerDay();
 
         private static List<Presence> GetPresencePerDay()
